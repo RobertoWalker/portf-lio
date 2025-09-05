@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #121212; /* Fundo escuro */
+      color: #e0e0e0; /* Texto claro */
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1e1e1e; /* Fundo escuro para o cabeçalho */
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+
+    nav {
+      background-color: #333; /* Fundo escuro para a navegação */
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #80d8ff; /* Links em azul claro */
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a.ativo {
+      border-bottom: 2px solid #80d8ff;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+      background: #1e1e1e; /* Fundo escuro para as seções */
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      color: #80d8ff; /* Títulos em azul claro */
+      margin-bottom: 1rem;
+    }
+
+    .projects .project {
+      margin-bottom: 1.5rem;
+    }
+
+    .project h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .contact a {
+      color: #80d8ff; /* Links em azul claro */
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #1e1e1e; /* Fundo escuro para o rodapé */
+      color: #e0e0e0; /* Texto claro */
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+
+    .topo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .foto-perfil {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .info-pessoal h1 {
+      font-size: 2.5rem;
+    }
+
+    .info-pessoal p {
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="topo">
+      <img src="minha-foto.jpg" alt="Minha foto" class="foto-perfil">
+      <div class="info-pessoal">
+        <h1>Roberto Paiva de Melo</h1>
+        <p>Desenvolvedor Front-End JR | Backend JR</p>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>Olá! Me chamo Roberto Paiva de Melo, sou estudante de Análise e Desenvolvimento de Sistemas e estou construindo minha carreira como programador. Tenho me dedicado a aprender e praticar tecnologias como HTML5, CSS, JavaScript, React.js, TypeScript, Node.js, Python, Next.js e MySQL.
+
+        Atualmente, estou focado em ganhar experiência prática através de projetos e colaborações, sempre buscando evoluir como desenvolvedor. Gosto de trabalhar em equipe, trocar ideias e aprender com outras pessoas — acredito que o trabalho em conjunto é essencial para criar soluções melhores e crescer profissionalmente.
+        
+        Meu objetivo é conquistar uma oportunidade no mercado de trabalho, onde eu possa aplicar meus conhecimentos, continuar aprendendo e contribuir de forma positiva para os projetos da empresa.</p>
+    </section>
+
+    <section id="projetos" class="projects">
+      <h2>Projetos</h2>
+
+      <div class="project">
+        <h3>Projeto 1 – Site de Notícias de Games</h3>
+        <p>Site teste para ver notícias sobre os jogos que estaram em lançamento</p>
+        <p><a href="https://backend-liart-iota-98.vercel.app/" target="_blank">Ver projeto</a></p>
+      </div>
+
+      <div class="project">
+        <h3>Projeto 2 – Portfólio em React</h3>
+        <p>Portfólio desenvolvido com React e styled-components.</p>
+        <p><a href="https://meusite.com/projeto2" target="_blank">Ver projeto</a></p>
+      </div>
+
+      <div class="project">
+        <h3>Projeto 3 – Site institucional</h3>
+        <p>Website profissional para pequenas empresas com integração de formulário de contato.</p>
+        <p><a href="https://meusite.com/projeto3" target="_blank">Ver projeto</a></p>
+      </div>
+    </section>
+
+    <section id="contato" class="contact">
+      <h2>Contato</h2>
+      <p>Email: <a href="mailto:robertopmelo18@gmail.com">robertopmelo18@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/roberto-paiva-de-melo-b213aa1b5/" target="_blank">linkedin.com/in/RobertoPaivaDeMelo</p>
+      <p>GitHub: <a href="https://github.com/RobertoWalker" target="_blank">https://github.com/RobertoWalker</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Portfolio Roberto 2025.</p>
+  </footer>
+
+  <!-- Botão para voltar ao topo -->
+  <button id="btnTopo" style="position:fixed;bottom:20px;right:20px;padding:10px 15px;display:none;z-index:1000;background:#80d8ff;border:none;color:#000;border-radius:5px;cursor:pointer;">
+    ↑ Topo
+  </button>
+
+  <!-- Link do JavaScript externo -->
+  <script src="script.js"></script>
+</body>
+</html>
